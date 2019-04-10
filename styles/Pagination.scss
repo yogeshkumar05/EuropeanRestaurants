@@ -1,0 +1,29 @@
+@import './variable.scss';
+.pagination {
+    display: flex;
+    margin: 30px auto;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 90vw;
+
+    .prev, .next {
+        cursor: pointer;
+    }
+  }
+  
+  .pagination div {
+    color: black;
+    float: left;
+    flex:1;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    text-align: center;
+  }
+  
+  .pagination div.active {
+    background-color: $theme-color;
+    color: $theme-font;
+  }
+  
+  .pagination div:hover:not(.active) {background-color: #76608a;}

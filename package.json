@@ -1,0 +1,49 @@
+{
+  "name": "europeanrestaurants",
+  "version": "1.0.0",
+  "description": "Read the data from a csv file & display the list of restaurants. Search by name or cuisine Type. Sort by Ratings",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot",
+    "prepublishOnly": "npm run transpile",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d /"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yogeshkumar05/EuropeanRestaurants.git"
+  },
+  "keywords": [
+    "reactjs",
+    "restaurants"
+  ],
+  "author": "Yogesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yogeshkumar05/EuropeanRestaurants/issues"
+  },
+  "homepage": "https://github.com/yogeshkumar05/EuropeanRestaurants#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.11.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.4.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "devDependencies": {
+    "csv-loader": "^3.0.2",
+    "papaparse": "^4.6.3"
+  }
+}

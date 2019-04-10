@@ -1,0 +1,13 @@
+@import './App.scss';
+@import './Searchbox.scss';
+@import './Hotelthumb.scss';
+@import './common.scss';
+@import './Pagination.scss';
+@import './HotelsContainer.scss';
+@import './variable.scss';
+
+body {
+    background: $body-background;
+    margin: 0;
+    color: $theme-color;
+}

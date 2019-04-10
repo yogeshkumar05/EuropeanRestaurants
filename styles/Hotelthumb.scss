@@ -1,0 +1,51 @@
+@import './variable.scss';
+.hotelthumb-container{
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+    background: white;
+    color: gray;
+
+    .hotel-details-container {
+        display: flex;
+        margin: 5px;
+        justify-content: space-between;
+        .hotel-icon {
+            width: 100px;
+            img {
+                width: 100%;
+                margin-top: 5px;
+            }
+        }
+
+        .hotel-details {
+            margin-left: 10px;
+            .hotel-title {
+                font-size: 22px;
+                margin: 0;
+                margin-top: 5px;
+                color: $theme-color;
+            }
+            .hotel-cuisine {
+                margin-top: 5px;
+                font-weight: bold;
+            }
+            .hotel-city {
+                margin-top: 10px;
+            }
+        }
+
+        .hotel-star-details {
+            display: flex;
+            margin: 5px;
+        }
+    }
+    .hotel-reviews {
+        padding: 10px;
+        color: black;
+    }
+}
+.fa-star {
+    color: cornflowerblue;
+    margin-right: 2px;
+}

@@ -1,0 +1,35 @@
+@import './variable.scss';
+
+.hotels-container {
+    .app-title{
+        margin: 0;
+        padding: 15px;
+        background: $theme-color;
+        color: $theme-font;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 2;
+    }
+    .hotel-list-container{
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
+
+.hotelthumb-container {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .hotel-list-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    .hotelthumb-container {
+        width: 45%;
+    }
+}
