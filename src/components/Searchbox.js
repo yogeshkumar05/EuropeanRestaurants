@@ -3,7 +3,7 @@ import CONSTS from '../utils/consts';
 import {PropTypes} from 'prop-types';
 
 const Searchbox = (props) => {
-    const {sortOrder, onSortClick, changeHandler, value, searchHandler} = props;
+    const {sortOrder, onSortClick, changeHandler, value, searchHandler, keyUpHandler} = props;
     let sortIcon = 'fa-sort';
     if(sortOrder === 'asc') {
         sortIcon = 'fa-sort-asc';
@@ -13,7 +13,7 @@ const Searchbox = (props) => {
     return(
         <div className='search-container'>
             <i className="fa fa-search" onClick={searchHandler}></i>
-            <input value={value} onChange={changeHandler} type='text' placeholder={CONSTS.SEARCH_PLACEHOLDER}/>
+            <input value={value} onKeyUp = {keyUpHandler} onChange={changeHandler} type='text' placeholder={CONSTS.SEARCH_PLACEHOLDER}/>
             <i title={CONSTS.SORT_INFO} className={"fa "+ sortIcon} onClick={onSortClick}></i>
         </div>
     )

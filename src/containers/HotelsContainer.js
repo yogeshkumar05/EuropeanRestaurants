@@ -62,6 +62,10 @@ export default class HotelsContainer extends Component {
         }
     }
 
+    keyHandler = (e) => {
+        e.keyCode === 13 && this.searchHandler();
+    }
+
     render() {
         const {activePage, sortOrder, hotelData} = this.state;
         const currentData =[];
@@ -72,7 +76,7 @@ export default class HotelsContainer extends Component {
         }
         return(<div className='hotels-container'>
             <h2 className='app-title'>European Restaurants</h2>
-            <Searchbox searchHandler={this.searchHandler} value ={this.state.searchValue} changeHandler = {this.searchChangeHandler} sortOrder={sortOrder} onSortClick={this.sortClickHandler}/>
+            <Searchbox keyUpHandler={this.keyHandler} searchHandler={this.searchHandler} value ={this.state.searchValue} changeHandler = {this.searchChangeHandler} sortOrder={sortOrder} onSortClick={this.sortClickHandler}/>
             <div className='hotel-list-container'>
                 {
                     currentData.map((item, index) => {
