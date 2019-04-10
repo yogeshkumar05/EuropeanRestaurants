@@ -1,6 +1,9 @@
 # EuropeanRestaurants
 Read the data from a csv file &amp; display the list of restaurants. Search by name or cuisine Type. Sort by Ratings
 
+# Demo is published at
+https://yogeshkumar05.github.io/EuropeanRestaurants/
+
 # steps to run the code
 1. clone the git repository
 2. navigate to the project folder and execute in cmd:
